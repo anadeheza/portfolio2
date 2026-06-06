@@ -4,7 +4,7 @@
     box-sizing: border-box;
     
     scrollbar-width: thin;
-    scrollbar-color: #8f5600 transparent;
+    scrollbar-color: #b96f00 transparent;
 }
 
 html {
@@ -14,8 +14,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background: url(assets/hero.png);
-
+    background-color: #fee1b6;
 }
 
 nav {
@@ -26,6 +25,7 @@ nav {
     padding: 20px;
     background: #ffe6d281;
     backdrop-filter: blur(5px);
+    z-index: 2;
 }
 
 .logo {
@@ -58,65 +58,70 @@ nav {
     align-items: self-start;
     margin: 0;
     width: 100%;
-    padding-left: 50px;
+    padding-left: 5%;
+    min-height: 500px;
+    padding-top: 5%;
+    border-bottom: 2px dashed #fff3e1;
 }
 
 #hero {
     height: 100vh;
-}
-
-.divider {
-    border-bottom: 3px dashed #ffffff65;
+    background: url(assets/hero.png);
 }
 
 .carrusel {
-    display: flex;
-    flex-direction: row;
+    width: 80%;
+    position: relative;
 }
 
 
-.slides {
-    max-width: 1100px;
-    margin: 0 60px 35px;
-    padding: 20px 10px;
+.item-link {
+    display: block;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: 0.2s ease;
+    margin-bottom: 50px;
     overflow: hidden;
 }
 
-.slides .item {
-    list-style: none;
-}
-
-.slides .item .item-link {
-    user-select: none;
-    display: block;
-    background: #fff;
-    padding: 18px;
-    border-radius: 12px;
-    text-decoration: none;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.2s ease;
+.item-link:hover {
+    border-color: #8f5600;
+    box-shadow: 4px 4px 0px 0px #8f560040;
 }
 
 .item-link img {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: 10px;
+    display: block; 
 }
 
-.carrusel .swiper-pagination-bullet{
-    height: 13px;
-    width: 13px;
-    opacity: 0.5;
-    background: #5372f0;
+.carrusel .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    opacity: 0.4;
+    background: #8f5600;
 }
 
-.carrusel .swiper-pagination-bullet-active{
+.carrusel .swiper-pagination-bullet-active {
     opacity: 1;
+    background: #8f5600;
 }
 
-.carrusel .swiper-slide-button{
-    color: #5372f0;
-    margin-top: -35px;
-} 
+.carrusel .swiper-button-prev::after,
+.carrusel .swiper-button-next::after {
+    display: none;
+}
+
+.carrusel .swiper-button-prev,
+.carrusel .swiper-button-next {
+    color: #8f5600;
+    background: #ffe6d2cc;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    font-size: 15px;
+    font-weight: bold;
+}
