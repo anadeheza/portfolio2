@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&display=swap');
+
+.major-mono-display-regular {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,14 +21,21 @@
     scrollbar-color: #b96f00 transparent;
 }
 
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
+    font-family: "Major Mono Display", monospace;
     flex-direction: column;
-    background-color: #fee1b6;
+    background-color: #fff0d9;
+    color: #000000;
+}
+
+button {
+  font-family: "Major Mono Display", monospace;
+
 }
 
 nav {
@@ -23,9 +44,10 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: #ffe6d281;
+    background: #fff0d995;
     backdrop-filter: blur(5px);
     z-index: 2;
+    margin-top: 0;
 }
 
 .logo {
@@ -36,6 +58,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 10px;
+
 }
 
 .nav-btn {
@@ -43,11 +66,13 @@ nav {
     padding: 3px 5px;
     border: 1px solid #8f5600;
     background: transparent;
+    color: #000000;
+    transition: transform 0.3s ease;
 }
 
 .nav-btn:hover {
-    background-color: #ffad339e;
-    box-shadow: 3px 3px 0px 0px #22222260;
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 0 0 #8a5000;
 
 }
 
@@ -61,12 +86,29 @@ nav {
     padding-left: 5%;
     min-height: 500px;
     padding-top: 5%;
-    border-bottom: 2px dashed #fff3e1;
 }
 
 #hero {
+    position: relative;
     height: 100vh;
-    background: url(assets/hero.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 90%;
+    min-height: 50%;
+    background-color: #fff4e5;
+    border-radius: 20px;
+    padding: 50px;
+}
+#hero h1 {
+    font-size: 50px;
+}
+
+#hero p {
+
 }
 
 .carrusel {
