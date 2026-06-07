@@ -171,31 +171,51 @@ nav {
 /*---*/
 
 .carrusel {
-    width: 80%;
+    width: 90%;
     position: relative;
 }
 
+.swiper-slide {
+    padding: 15px;
+    margin-bottom: 50px;
+    background-color: #fff4e5;
+    border-radius: 15px;
+    display: flex;
+}
+
+.swiper-slide:hover {
+    border: 1px solid #8f5600;
+    box-shadow: 0px 4px 0px 0px #8f560040;
+}
+
+.tag {
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 3px;
+    max-width: 50%;
+}
+
+.desc {
+    font-size: 20px;
+}
 
 .item-link {
+    margin-bottom: 15px;
     display: block;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid #753b00;
     transition: 0.2s ease;
-    margin-bottom: 50px;
     overflow: hidden;
-}
-
-.item-link:hover {
-    border-color: #8f5600;
-    box-shadow: 4px 4px 0px 0px #8f560040;
 }
 
 .item-link img {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    display: block; 
+    display: block;
 }
 
 .carrusel .swiper-pagination-bullet {
