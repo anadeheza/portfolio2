@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&family=Plus+Jakarta+Sans&display=swap');
 
 .major-mono-display-regular {
-  font-family: "Major Mono Display", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.plus-jakarta-sans-reg {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .limelight-regular {
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 *{
@@ -51,13 +58,14 @@ nav {
 
 .logo {
     font-size: 20px;
+    margin-left: 20px;
     color: #8f5600;
 }
 
 .nav-links {
     display: flex;
     gap: 15px;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 .nav-btn {
@@ -66,8 +74,10 @@ nav {
     padding: 3px 5px;
     border: none;
     background: transparent;
-    color: #000000;
+    color: #8f5600;
     transition: transform 0.3s ease;
+    font-family: "Limelight", sans-serif;
+
 }
 
 .nav-btn:hover {
@@ -88,8 +98,9 @@ nav {
     padding-top: 5%;
 }
 
-.section h2 {
+#projects h2, #about h2 {
     margin: 50px;
+    color: #8f5600;
 }
 
 #hero {
@@ -100,6 +111,13 @@ nav {
     align-items: center;
 }
 
+.foto {
+    position: absolute;
+    top: 182px;
+    right: 250px;
+    width: 250px;
+}
+
 .hero-content {
     width: 90%;
     min-height: 70%;
@@ -108,8 +126,8 @@ nav {
     padding: 50px;
 
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 #hero h1 {
@@ -181,6 +199,8 @@ nav {
     background-color: #fff4e5;
     border-radius: 15px;
     display: flex;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
 }
 
 .swiper-slide:hover {
@@ -188,13 +208,17 @@ nav {
     box-shadow: 0px 4px 0px 0px #8f560040;
 }
 
+
+
 .tag {
+    color: #8f5600;
     font-size: 15px;
     margin-bottom: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #00000050;
     border-radius: 20px;
-    padding: 3px;
-    max-width: 50%;
+    padding: 0 10px;
+    width: fit-content;
+    font-weight: bold;
 }
 
 .desc {
@@ -247,9 +271,14 @@ nav {
     font-weight: bold;
 }
 
-footer {
+#contacto {
     background-color: #8f56008f;
     min-height: 100px;
     color: #fff0d9;
+    font-family: "Limelight", sans-serif;
+
 }
 
+#contacto h2 {
+    letter-spacing: 2px;
+}
