@@ -42,7 +42,6 @@ nav {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     padding: 20px;
     background: #fff0d995;
     backdrop-filter: blur(5px);
@@ -57,14 +56,15 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 10px;
-
+    gap: 15px;
+    margin-left: 20%;
 }
 
 .nav-btn {
-    border-radius: 10px;
+    font-size: 15px;
+    border-radius: 5px;
     padding: 3px 5px;
-    border: 1px solid #8f5600;
+    border: none;
     background: transparent;
     color: #000000;
     transition: transform 0.3s ease;
@@ -88,6 +88,10 @@ nav {
     padding-top: 5%;
 }
 
+.section h2 {
+    margin: 50px;
+}
+
 #hero {
     position: relative;
     height: 100vh;
@@ -98,18 +102,73 @@ nav {
 
 .hero-content {
     width: 90%;
-    min-height: 50%;
+    min-height: 70%;
     background-color: #fff4e5;
     border-radius: 20px;
     padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 #hero h1 {
-    font-size: 50px;
+    font-size: 80px;
 }
 
 #hero p {
-
+    margin-top: 10px;
+    font-size: 20px;
 }
+
+#hero a {
+    color: #753b00;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.carousel {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    overflow-x: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: spin 20s infinite linear;
+    padding-right: 20px;
+    flex-shrink: 0;
+    width: max-content; 
+}
+
+.tool {
+    font-size: 15px;
+    background-color: #fff4e592;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.tool img {
+    height: 25px;
+    object-fit: cover;
+}
+
+@keyframes spin {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+
+/*---*/
 
 .carrusel {
     width: 80%;
@@ -167,3 +226,10 @@ nav {
     font-size: 15px;
     font-weight: bold;
 }
+
+footer {
+    background-color: #8f56008f;
+    min-height: 100px;
+    color: #fff0d9;
+}
+
